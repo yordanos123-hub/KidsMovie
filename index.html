@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidsMovies - Best Animated Films</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">KidsMovies</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Discover Amazing Kids Animation Movies</h1>
+    <p>Fun, safe, and entertaining movies for children</p>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search movies...">
+        <button id="searchBtn">Search</button>
+    </div>
+    <a href="#movies"><button class="explore-btn">Explore Movies</button></a>
+</section>
+
+<section class="featured">
+    <h2>⭐ Featured Movies</h2>
+    <div class="movie-row" id="featuredRow">
+        
+        <!-- FROZEN POSTER ADDED DIRECTLY IN HTML -->
+        <div class="movie-card" onclick="openModal({
+            title: 'Frozen',
+            year: 2013,
+            rating: '8.0',
+            description: 'Anna sets off on an epic journey to find her sister Elsa, whose icy powers have trapped the kingdom in eternal winter.',
+            trailer: 'https://www.youtube.com/embed/TbQm5doF_Uc',
+            category: 'Disney'
+        })">
+            <img src="image.png" alt="Frozen Poster">
+            <div class="movie-info">
+                <h3>Frozen</h3>
+                <p>2013 • ⭐ 8.0</p>
+            </div>
+        </div>
+        <!-- End of Frozen card -->
+
+    </div>
+</section>
+
+<section id="categories" class="categories">
+    <h2>Categories</h2>
+    <div class="category-grid">
+        <div class="card">All</div>
+        <div class="card">Disney</div>
+        <div class="card">Pixar</div>
+        <div class="card">Anime Kids</div>
+        <div class="card">Educational</div>
+    </div>
+</section>
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search movies...">
+    <button id="searchBtn">
+        <i class="fas fa-search"></i> Search
+    </button>
+</div>
+<section id="movies" class="movies">
+    <h2>All Movies</h2>
+    <div class="movie-grid" id="movieGrid"></div>
+</section>
+
+<!-- MODAL POPUP -->
+<div id="movieModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<section id="about" class="about">
+    <h2>About This Website</h2>
+    <p>Welcome to KidsMovies! A simple platform built with HTML, CSS, and JavaScript.</p>
+</section>
+
+<footer>
+    <p>© 2026 KidsMovies. Made with ❤️ for little fans.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
