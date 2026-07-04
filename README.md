@@ -4,6 +4,8 @@ A simple, fun, and safe website for discovering the best animated movies for kid
 
 **Live demo:** [kids-movie.vercel.app](https://kids-movie.vercel.app/)
 
+![KidsMovies homepage screenshot](kids-movie-home.png)
+
 ## ✨ Features
 
 - **Featured Movies** — highlighted picks on the homepage (e.g. Frozen, 2013 ⭐ 8.0)
